@@ -3,7 +3,7 @@
 ## Video Tutorial
 [![Watch the video](https://people.com/thmb/pDnF9xhhJ1ZLDBGoZaJHwV1Wbfo=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/rick-astley-600-d31de1cb3fb248e6b714e5fa789b104d.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-## Table of Contents
+## Table of Contents 
 - [Bandit Tutorial](#bandit-tutorial)
   - [Video Tutorial](#video-tutorial)
 - [1 Introduction](#1-introduction)
