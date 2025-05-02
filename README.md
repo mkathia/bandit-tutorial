@@ -13,12 +13,9 @@
 - [3 Usage](#3-usage)
 - [4 Integration and Plugins](#4-integration-and-plugins)
   - [4.1 Visual Studio Code](#41-visual-studio-code)
-  - [4.2 Sublime Text](#42-sublime-text)
-  - [4.3 Vim/Neovim](#43-vimneovim)
-  - [4.4 Emacs](#44-emacs)
-  - [4.5 Github Actions](#45-github-actions)
-  - [4.6 Hudons/Jenkins](#46-hudonsjenkins)
-  - [4.7 Test Plugins](#47-test-plugins)
+  - [4.2 Vim/Neovim](#42-vimneovim)
+  - [4.3 Github Actions](#43-github-actions)
+  - [4.4 Test Plugins](#44-test-plugins)
 - [5 Examples](#5-examples)
   - [5.1 Example 1](#51-example-1)
   - [5.2 Example 2](#52-example-2)
@@ -41,17 +38,11 @@
 # 4 Integration and Plugins
 ## 4.1 Visual Studio Code
 
-## 4.2 Sublime Text
+## 4.2 Vim/Neovim
 
-## 4.3 Vim/Neovim
+## 4.3 Github Actions
 
-## 4.4 Emacs
-
-## 4.5 Github Actions
-
-## 4.6 Hudons/Jenkins
-
-## 4.7 Test Plugins
+## 4.4 Test Plugins
 
 # 5 Examples
 ## 5.1 Example 1
