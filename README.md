@@ -1,1 +1,1 @@
-# bandit-tutorial
+# Bandit Tutorial
