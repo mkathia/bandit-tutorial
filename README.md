@@ -124,7 +124,7 @@ Simply create a `.github/workflows/bandit.yml` file in your repository and add t
 
 ## 4.4 Test Plugins
 
-Bandit allows you to write your own plugins to check for specific security issues in your code. You can create a new plugin by creating a new Python file in the `bandit/plugins` directory and implementing the `check` method. Here is an example of a simple Bandit plugin:
+Bandit allows you to write your own plugins to check for specific security issues in your code. You can create a new plugin by creating a new Python file in the `bandit/plugins` directory. Here is an example of a simple Bandit plugin:
 
 ```python
 import bandit
