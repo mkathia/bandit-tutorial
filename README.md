@@ -27,7 +27,7 @@
   - [6.2 Limitations](#62-limitations)
 
 # 1 Introduction
-
+Bandit is a tool designed to find common security issues in Python code by parsing each file into an abstract syntax tree (AST) and running appropriate plugins against the nodes to identify vulnerabilities such as unsafe function use, weak cryptography, and insecure file operations. Originally developed under the OpenStack Security Project, Bandit was later rehomed to the PyCQA organization, benefiting from a growing community of contributors and sponsors. Once analysis is complete, Bandit generates a report in various formats (text, JSON, SARIF) that can be consumed by developers or automated pipelines. Its plugin architecture allows users to write custom checks targeting project-specific concerns—extending Bandit’s coverage without modifying core code.
 # 2 Installation and Containerization
 ## 2.1 Installation
 
