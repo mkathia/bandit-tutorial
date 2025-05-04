@@ -97,6 +97,23 @@ See screenshot:
 
 ## 4.2 Vim/Neovim
 
+We're going to use ![ALE (Asynchronous Lint Engine)](https://github.com/dense-analysis/ale) to integrate Bandit into Vim/Neovim. ALE is a plugin for Vim and Neovim that provides linting and fixing for many languages.
+
+To install ALE, you should follow the instructions in their [README](https://github.com/dense-analysis/ale/blob/master/README.md#installation). Once you have ALE installed, you add these lines to your configuration (however you manage plugins):
+
+Vimscript:
+```vim
+let g:ale_linters = { 'python': ['bandit'] }
+```
+
+Lua:
+```lua
+vim.g.ale_linters = { python = {'bandit'} }
+```
+
+At this point, it should just work.
+
+
 ## 4.3 Github Actions
 
 You can use Bandit in GitHub Actions to automatically run Bandit on your code when you push changes to your repository. Here is an example of how to set up Bandit in GitHub Actions:
