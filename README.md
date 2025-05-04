@@ -289,3 +289,9 @@ Output:
 ## 6.1 Future Use
 
 ## 6.2 Limitations
+
+The main limitation of Bandit is that it is a static analysis tool. This means that it analyzes the code without executing it. As a result, Bandit may produce false positives or false negatives. It is important to manually review the results and verify the findings.
+
+It also can miss issues that are only present at runtime, such as issues that depend on the environment or external factors. For example, Bandit may not be able to detect issues related to network security or database security if they are not explicitly defined in the code.
+
+It is also important to note that Bandit is not a replacement for other security tools. It should be used in conjunction with other security tools and practices to ensure the security of your code.
