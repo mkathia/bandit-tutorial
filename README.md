@@ -191,6 +191,7 @@ bandit examples/1ace.py
 ```
 
 Output: 
+
 ![Bandit Output](images/1ace.png)
 
 ## 5.2 Example 2: Insecure File Permissions
@@ -220,6 +221,7 @@ bandit examples/2ace.py
 ```
 
 Output:
+
 ![Bandit Output](images/2setting_permissions.png)
 
 ## 5.3 Example 3: Weak Cryptography
