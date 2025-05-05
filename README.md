@@ -271,7 +271,7 @@ bandit examples/4socket.py
 ```
 
 Output:
-![Bandit Output](images/4socket.png)
+![Bandit Output](images/4.png)
 
 ## 5.5 Example 5: Insecure SSH Login
 
