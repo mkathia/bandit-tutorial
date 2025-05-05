@@ -190,7 +190,7 @@ Here is an example of how to run Bandit on this code, as well as the actual outp
 bandit examples/1ace.py
 ```
 
-Output:
+Output: 
 ![Bandit Output](images/1ace.png)
 
 ## 5.2 Example 2: Insecure File Permissions
