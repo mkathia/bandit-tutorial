@@ -27,7 +27,12 @@
   - [6.2 Limitations](#62-limitations)
 
 # 1 Introduction
-Bandit is a tool designed to find common security issues in Python code by parsing each file into an abstract syntax tree (AST) and running appropriate plugins against the nodes to identify vulnerabilities such as unsafe function use, weak cryptography, and insecure file operations. Originally developed under the OpenStack Security Project, Bandit was later rehomed to the PyCQA organization, benefiting from a growing community of contributors and sponsors. Once analysis is complete, Bandit generates a report in various formats (text, JSON, SARIF) that can be consumed by developers or automated pipelines. Its plugin architecture allows users to write custom checks targeting project-specific concerns—extending Bandit’s coverage without modifying core code.
+Bandit is a tool designed to find common security issues in Python code by parsing each file into an abstract syntax tree (AST) and running appropriate plugins against the nodes to identify vulnerabilities such as unsafe function use, weak cryptography, and insecure file operations. Bandit was originally developed under the OpenStack Security Project, it later changed hands to the PyCQA organization and benefits from a growing community of contributors and sponsors. Once analysis is complete, Bandit generates a report in various formats (text, JSON, SARIF) that can be viewed and analyzed by developers or automated pipelines. Bandit also has a nice plugin architecture that allows users to write custom checks targeting project-specific concerns—extending Bandit’s coverage without modifying core code.
+
+Bandit is used widely in both industry and open-source environments due to it being extremely simple, efficient, flexible, and fast. It can be executed alone as a CLI tool or used as a larger workflow. Things like GitHub actions, pre-commit hooks, Docker containers or CI/CD pipelines. It is easily configured via .bandt or pyproject.toml files allowing it to be fine-tuned. This allows Bandit to serve as the first line of defense during development and code reviews against potential vulnerabilities.
+
+In this repository, you will find a thorough tutorial covering the installation, usage, integration, plugin development, practical examples, limitations, and future roadmap of Bandit. This guide aims to equip developers and security professionals with the knowledge and tools needed to adopt Bandit effectively in real-world projects.
+
 # 2 Installation and Containerization
 ## 2.1 Installation
 
@@ -309,6 +314,10 @@ Output:
 
 # 6 Future Use and Limitations
 ## 6.1 Future Use
+Bandits future looks bright, as it continues to mature it will continue to become more intelligent. There will be less false positives and false negatives by continuously refining existing checks and incorporating different metrics effectively. PyCQA is looking to enhance Bandit’s configuration system to allow for more control over test selections, severity threshold, and project specific exclusions. They are also planning to improve reporting formats to support more standardized outputs. This will allow for integration into modern security dashboards and CI pipelines. Enhanced CI/CD integration is expected to include support for platforms like GitLab CI, Bitbucket Pipelines and richer Github Actions features beyond bandit-action. The community plugin register will continue to also grow and allow Bandit to expand its ecosystem. There might even be plans for a centralized plugin registry to simplify discovery and sharing of custom tests. Additionally, deeper analysis capabilities are being planned such as integrating basic taint analysis or data-flow tracking to catch context-dependent vulnerabilities that AST might miss.
+
+In the longer term Bandit’s applicability may not only be limited to Python but might also include multi-language support. Overall Bandit’s growth looks promising as a tool and as a community focused on preventing serious incidents. 
+
 
 ## 6.2 Limitations
 
