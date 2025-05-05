@@ -245,6 +245,7 @@ bandit examples/3bad_crypto.py
 ```
 
 Output:
+
 ![Bandit Output](images/3bad_crypto.png)
 
 ## 5.4 Example 4
@@ -273,6 +274,7 @@ bandit examples/4socket.py
 ```
 
 Output:
+
 ![Bandit Output](images/4.png)
 
 ## 5.5 Example 5: Insecure SSH Login
@@ -302,6 +304,7 @@ bandit examples/5ssh.py
 ```
 
 Output:
+
 ![Bandit Output](images/5ssh.png)
 
 # 6 Future Use and Limitations
