@@ -397,7 +397,7 @@ insecure_ssh_login()
 ```
 
 This code has multiple vulnerabilities:
-1. It uses the `AutoAddPolicy` for SSH connections, which automatically adds the host key without verifying it. This can lead to connecting to a malicious server. Notice that Bandit does not flag this as a vulnerability, but it is a security risk.
+1. It uses the `AutoAddPolicy` for SSH connections, which automatically adds the host key without verifying it. This can lead to connecting to a malicious server.
 2. ssh.exec_command is used to execute a command on the remote server, which can be exploited if the command is not properly sanitized. An attacker could inject malicious commands into the `exec_command` function.
 3. It has a hardcoded password, which is a security risk. Hardcoding passwords in code can lead to unauthorized access if the code is exposed or shared.
 
