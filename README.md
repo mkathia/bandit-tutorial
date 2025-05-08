@@ -351,7 +351,7 @@ Output:
 
 ![Bandit Output](images/3bad_crypto.png)
 
-## 5.4 Example 4
+## 5.4 Example 4: Binding to All Interfaces
 
 ```python
 import socket
