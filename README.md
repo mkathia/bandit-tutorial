@@ -23,7 +23,7 @@
   - [5.1 Example 1: Arbitrary Code Execution](#51-example-1-arbitrary-code-execution)
   - [5.2 Example 2: Insecure File Permissions](#52-example-2-insecure-file-permissions)
   - [5.3 Example 3: Weak Cryptography](#53-example-3-weak-cryptography)
-  - [5.4 Example 4](#54-example-4)
+  - [5.4 Example 4 Binding to All Interfaces](#54-example-4-binding-to-all-interfaces)
   - [5.5 Example 5: Insecure SSH Login](#55-example-5-insecure-ssh-login)
 - [6 Future Use and Limitations](#6-future-use-and-limitations)
   - [6.1 Future Use](#61-future-use)
