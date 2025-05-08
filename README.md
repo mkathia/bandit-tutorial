@@ -1,7 +1,7 @@
 # Bandit Tutorial 
 
 ## Video Tutorial
-[![Watch the video](https://people.com/thmb/pDnF9xhhJ1ZLDBGoZaJHwV1Wbfo=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/rick-astley-600-d31de1cb3fb248e6b714e5fa789b104d.jpg)](https://www.youtube.com/watch?v=uyw742c8Oy4)
+[![Watch the video](https://img.youtube.com/vi/uyw742c8Oy4/hqdefault.jpg)](https://www.youtube.com/watch?v=uyw742c8Oy4)
 
 ## Table of Contents 
 - [Bandit Tutorial](#bandit-tutorial)
