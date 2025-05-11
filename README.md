@@ -93,44 +93,53 @@ You can view the full help page at https://bandit.readthedocs.io/en/1.5.1/man/ba
 
 ## 3.1 Basic Invocation
   To scan a single file or directory:
-  
+
+  ```bash
   bandit path/to/file_or_directory.py
-  To recursively scan all Python files under a directory (the most common mode)
-  
+  ```
+
+  To recursively scan all Python files under a directory (the most common mode):
+  ```bash
   bandit -r path/to/project/  # or --recursive
+  ```
   This tells Bandit to traverse subdirectories for .py files and process them all 
   
+  Bandit can be run with profiles. To run Bandit against the examples directory using only the plugins listed in the ShellInjection profile:
+  ```bash
   bandit examples/*.py -p ShellInjection
-  Bandit can be run with profiles. To run Bandit against the examples directory using only the plugins listed in the ShellInjection profile
+  ```
   
-  cat examples/imports.py | bandit -
   Bandit also supports passing lines of code to scan using standard input. To run Bandit with standard input
+  ```bash
+  cat examples/imports.py | bandit -
+  ```
 
 ## 3.2 Commonly Used Flags
 
+  ```bash
+  # Show the built-in help text (and exit) to see all options at a glance 
   -h, --help
-  Show the built-in help text (and exit) to see all options at a glance 
   
+  # Recurse into subdirectories when scanning (use alone or with other flags)
   -r, --recursive
-  Recurse into subdirectories when scanning (use alone or with other flags) 
   
+  # Display up to N lines of context around each finding (default is typically 1) 
   -n N, --number N
-  Display up to N lines of context around each finding (default is typically 1) 
   
+  # Load a YAML/INI config file (i.e. .bandit or custom path) to select or skip plugins and override defaults 
   -c FILE, --configfile FILE
-  Load a YAML/INI config file (i.e. .bandit or custom path) to select or skip plugins and override defaults 
   
+  # Run only the tests in a named profile (e.g. ShellInjection) rather than all checks 
   -p PROFILE, --profile PROFILE
-  Run only the tests in a named profile (e.g. ShellInjection) rather than all checks 
   
+  # Comma-separated list of specific test IDs to include (e.g. B101,B302) 
   -t TESTS, --tests TESTS
-  Comma-separated list of specific test IDs to include (e.g. B101,B302) 
   
+  # Comma-separated list of test IDs to skip entirely (e.g. B607,B608) 
   -s SKIPS, --skip SKIPS
-  Comma-separated list of test IDs to skip entirely (e.g. B607,B608) 
   
+  # Only report issues at or above a given severity:
   -l, -ll, -lll, --level
-  Only report issues at or above a given severity:
   
   -l = LOW and above
   
@@ -138,8 +147,8 @@ You can view the full help page at https://bandit.readthedocs.io/en/1.5.1/man/ba
   
   -lll = HIGH only 
   
+  # Only report issues at or above a given confidence level:
   -i, -ii, -iii, --confidence
-  Only report issues at or above a given confidence level:
   
   -i = LOW and above
   
@@ -147,41 +156,45 @@ You can view the full help page at https://bandit.readthedocs.io/en/1.5.1/man/ba
   
   -iii = HIGH only 
   
+  # Comma-separated directories or files to skip (in addition to any exclusions in your config file) 
   -x PATHS, --exclude PATHS
-  Comma-separated directories or files to skip (in addition to any exclusions in your config file) 
   
+  # Choose output formatter: screen (default), json, xml, html, csv, yaml, or custom 
   -f FORMAT, --format FORMAT
-  Choose output formatter: screen (default), json, xml, html, csv, yaml, or custom 
   
+  #  Write the report to a file instead of stdout (e.g. bandit -r . -f html -o report.html) 
   -o FILE, --output FILE
-  Write the report to a file instead of stdout (e.g. bandit -r . -f html -o report.html) 
-  
+ 
+  #  Print extra details, such as which files were included or excluded 
   -v, --verbose
-  Print extra details, such as which files were included or excluded 
   
+  # Enable debug logging for troubleshooting Bandit itself 
   -d, --debug
-  Enable debug logging for troubleshooting Bandit itself 
   
+  # Compare against a previous JSON report to only surface new issues 
   -b FILE, --baseline FILE
-  Compare against a previous JSON report to only surface new issues 
   
+  # Load additional CLI arguments from a file (same syntax as .bandit) 
   --ini FILE
-  Load additional CLI arguments from a file (same syntax as .bandit) 
   
+  # Show Bandit’s version and exit 
   --version
-  Show Bandit’s version and exit 
+  ```
 
 ## 3.3 Viewing All Options
 
   For the full, up-to-date list of flags and detailed descriptions, run:
+  ```bash
   bandit --help
+  ```
   or consult the man page (if installed):
-  
+  ```bash
   man bandit
+  ```
   These will display every supported option along with usage examples, custom formatting guidance, and reference to configuration files 
 
 
-With these commands and flags, you can tailor Bandit to almost any workflow—whether you’re doing a quick local scan, integrating into CI/CD, or generating rich reports for security reviews.
+  With these commands and flags, you can tailor Bandit to almost any workflow—whether you’re doing a quick local scan, integrating into CI/CD, or generating rich reports for security reviews.
 
 # 4 Integration and Plugins
 ## 4.1 Visual Studio Code
